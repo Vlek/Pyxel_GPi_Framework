@@ -1,7 +1,10 @@
+from gpi_framework import Framework
 
-import pyxel
+
+class App(Framework):
+
+    def __init__(self):
+        Framework.__init__(self)
 
 
-class App:
-    def __init__(self) -> None:
-        pyxel.init(255, 194)
+App().run()
